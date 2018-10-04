@@ -1,0 +1,156 @@
+<div class="portfolio-content">
+    <!--Title and Subtitle-->
+    <div class="cbp-l-project-title">Project Four</div>
+    <div class="cbp-l-project-subtitle">Animation,Intermediate</div>
+    <!--/Title and Subtitle-->
+    <!--Slider-->
+    <div class="cbp-slider">
+        <ul class="cbp-slider-wrap">
+            <li class="cbp-slider-item">
+                <a href="contents/images/portfolios/1400x900/slidecycle1.png" class="cbp-lightbox">
+                    <img src="contents/images/portfolios/1400x900/slidecycle1.png" alt=""> 
+                </a>
+            </li>
+            <li class="cbp-slider-item">
+                <a href="contents/images/portfolios/1400x900/slidecycle2.png" class="cbp-lightbox">
+                    <img src="contents/images/portfolios/1400x900/slidecycle2.png" alt=""> 
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--/Slider-->
+    <!--Container-->
+    <div class="cbp-l-project-container">
+        <!--Description-->
+        <div class="cbp-l-project-desc">
+            <div class="cbp-l-project-desc-title">
+                <span>Project Description</span>
+            </div>
+            <div class="cbp-l-project-desc-text">Animation using p5.js which was taking opoosite words and making a composition using interaction.I chose <strong>Day & Night </strong> and wanted to show the animation of the sun rising and setting that could evoke the concept of day and night </div>
+           <div class="cbp-l-project-desc-title">
+                <span>Ideation</span></div> 
+               <div class="cbp-l-project-desc-text">Initial ideation was to create the object move using a simple up and down animation using ypos and chnage of background color </div>
+                <a href="contents/images/portfolios/other/a2l.png">
+                      <img src="contents/images/portfolios/other/a2l.png" alt=""></a>
+               <p>Used the map() to change the background from white to black once the ypos of the sun reaches the end of the canvas.</br>
+               <br>color=map(ypos,50,360,255,0);
+  <br>background (color);
+  <br>fill(253, 184, 19);
+  <br>noStroke();
+  <br> ypos =ypos+speed;
+  <br> if((ypos>height)||(ypos<0))
+     <br>   {
+     <br>   speed= speed*-1;
+    <br>  }
+<br>rect(250,ypos,100,100,100);
+           <a href="contents/images/portfolios/other/a2l2.png">
+                      <img src="contents/images/portfolios/other/a2l2.png" alt=""></a>
+    <p> Cycle animation:Where the frame movement was done the wheels.
+ <a href="contents/images/portfolios/other/a2l1.png">
+                      <img src="contents/images/portfolios/other/a2l1.png" alt=""></a>
+        <p> Created some mountains using vertex and push and pop() along with simple rotating star objects.</p>
+     <p>Code for the cycle animation:
+    <br>ellipse(225+speedX,520-speedY,100,100); //bike wheel 
+<br>ellipse(400+speedX,490-speedY,100,100); //bike wheel
+<br>ellipse(225+speedX,520-speedY,10,10); //inner bike wheel
+<br>ellipse(400+speedX,490-speedY,10,10); //inner bike wheel<br>
+quad(225+speedX,520-speedY,305+speedX,505-speedY,350+speedX,435-<br>speedY,265+speedX,450-speedY); //frame
+<br>line(260+speedX,445-speedY,305+speedX,505-speedY); //frame
+<br>line(400+speedX,490-speedY,352+speedX,435-speedY); //frame
+<br>ellipse(305+speedX,505-speedY,30,30); //frame
+<br>quad(250+speedX,450-speedY,245+speedX,440-<br>speedY,275+speedX,440-speedY,275+speedX,445-speedY);
+
+<br>speedX+=map(mouseX,0,width,1,5); //x coordinate of the mouse <br>determine speed of the bike
+<br>speedY+=0.25;</p>
+ 
+     <a href="contents/images/portfolios/other/cycle.png">
+         <img src="contents/images/portfolios/other/cycle.png" alt=""></a></p>
+      <p>Rotation of the sun rays was another animation done as another piece of composition. </p>
+<br>push();
+
+<br>translate(350,100);
+
+<br>rotate (rads);
+
+
+<br>for (var d = 0; d < 10; d ++){
+
+<br>noStroke();
+
+<br>fill(206+d,188+d,122+d);
+
+<br>ellipse(0,0,175,175);
+
+
+<br>stroke(206+d,188+d,122+d);
+
+<br>strokeWeight(3);
+
+
+<br>for (var i = 0; i < 36; i ++) {
+
+<br>line(0,0,x,y);
+
+<br>rotate(PI/20);
+
+
+<br>}
+
+<br>}
+
+<br>pop ();
+
+
+<br>rads = rads + 1.57;
+        </div>
+        <!--/Description-->
+        <!--/Detail List-->
+        <div class="cbp-l-project-details">
+            <div class="cbp-l-project-details-title">
+                <span>Project Details</span>
+            </div>
+             <!-- List-->
+            <ul class="cbp-l-project-details-list">
+                <li><strong>Type</strong></li>
+                <li><strong>Date</strong>August 2017- December 2017</li>
+                <li><strong>Categories</strong>Animation,Intermediate</li>
+            </ul>
+             <!--/List-->
+            <a href="contents/p5/a2/index.html" target="_blank" class="cbp-l-project-details-visit btn red uppercase">View Animation 1</a>
+            <a href="contents/p5/a2/index1.html" target="_blank" class="cbp-l-project-details-visit btn red uppercase">View Animation 2</a>
+        </div>
+        <!--/Detail List-->
+    </div>
+    <!--/Container-->
+    <!--Container 2-->
+    <div class="cbp-l-project-container">
+        <div class="cbp-l-project-related">
+            <!--Title-->
+            <div class="cbp-l-project-desc-title">
+                <span>Related Projects</span>
+            </div>
+            <!--/Title-->
+            <!--Related List-->
+            <ul class="cbp-l-project-related-wrap">
+                <li class="cbp-l-project-related-item">
+                    <a href="projects/project3.html" class="cbp-singlePage cbp-l-project-related-link " rel="nofollow" data-cbp-singlePage="projects">
+                        <img src="contents/images/portfolios/600x600/3.PNG" alt="">
+                        <div class="cbp-l-project-related-title">Animation,Basic</div>
+                    </a>
+                </li>
+                <li class="cbp-l-project-related-item">
+                    <a href="projects/project6.html" class="cbp-singlePage cbp-l-project-related-link " rel="nofollow" data-cbp-singlePage="projects">
+                        <img src="contents/images/portfolios/600x600/6.PNG" alt="">
+                        <div class="cbp-l-project-related-title">Animation,Flocking</div>
+                    </a>
+                </li>
+            </ul>
+            <!--/Related List-->
+        </div>
+        </div>
+    </div>
+    <!--/Container 2-->
+    <br>
+    <br>
+    <br> 
+</div>
