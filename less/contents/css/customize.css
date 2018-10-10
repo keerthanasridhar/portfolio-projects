@@ -50,7 +50,7 @@ body {
 }
 
 .footer-small {
-	color: #555;
+	color: #C7ABC8;
     display: block;
     margin: 10px;
     margin-left: 25px;
@@ -359,14 +359,16 @@ address a i:hover {
 }
 
 .menu {
-    width: 195px;
+    width: 150px;
     float: left;
+    display: inline-block;
     margin-left: 15px;
     margin-right: 38px;
 }
 
 .cbp-filter-item {
     cursor: pointer;
+ 
 }
 
 .hvr-underline-from-left {
@@ -392,7 +394,7 @@ address a i:hover {
 }
 
 li.hvr-underline-from-center:before {
-    height: 1px;
+    height: 2px;
 }
 
 .list-group .logo {
@@ -402,7 +404,7 @@ li.hvr-underline-from-center:before {
 
 a.list-group-item {
     color: #666;
-    transition: .3s;
+    transition: .2s;
 }
 
 a.list-group-item:hover {
@@ -480,7 +482,7 @@ a:focus {
 }
 
 .cbp-caption-activeWrap {
-    background: #000;
+    background: aqua;
 }
 
 .portfolio-content .cbp-l-project-desc-title span,
@@ -558,7 +560,7 @@ a:focus {
 }
 
 .cbp-item-wrap:hover {
-    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.75);
     transform: translate(0, -4px);
     opacity: 1 !important;
 }
@@ -738,7 +740,7 @@ pre {
 }
 
 #menu-links {
-    margin-bottom: 18px;
+    margin-bottom: 80px;
 }
 
 /*------------------------------------------------------------------
@@ -830,7 +832,6 @@ footer .container-fluid {
 .footer {
   color: #ccc;
   padding: 1.2em;
-
   text-align: center;
 }
 
@@ -848,7 +849,7 @@ footer .container-fluid {
 }
 
 .btn {
-  display: inline-block;
+  display:inline-block;
   color: black;
   border: 1px solid currentColor;
   text-decoration: none;
